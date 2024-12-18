@@ -1,0 +1,95 @@
+.new-books {
+    background-color: #0b0c12;
+  }
+  
+  .new-books > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2.375rem;
+    padding-top: 6.25rem;
+  }
+  
+  .new-books-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      font-weight: 500;
+      font-size: 2rem;
+      color: #fff;
+    }
+    button {
+      border-radius: 3.125rem;
+      width: 8.1875rem;
+      height: 2.25rem;
+      background: #ec8f32;
+      font-weight: 700;
+      font-size: 0.75rem;
+      line-height: 0%;
+      text-align: center;
+      color: #000;
+      transition: 0.3s;
+  
+      &:hover {
+        background-color: transparent;
+        border: 0.125rem solid #ec8f32;
+        color: #ec8f32;
+      }
+    }
+  }
+  
+  .new-books-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 10px;
+    position: relative;
+    .like-btn{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .new-card-descrip {
+      display: flex;
+      flex-direction: column;
+      gap: 0.225rem;
+      width: 70%;
+      p {
+        font-weight: 300;
+        font-size: 1rem;
+        color: #adadad;
+      }
+      h6 {
+        font-weight: 500;
+        font-size: 1.3125rem;
+        color: #fff;
+      }
+    }
+  }
+  
+  @media (max-width:742px){
+    .new-books-card {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding: 10px;
+      .new-card-descrip {
+        display: flex;
+        flex-direction: column;
+        gap: 0.225rem;
+        width: 70%;
+        p {
+          font-weight: 300;
+          font-size: 1.7rem;
+          color: #adadad;
+        }
+        h6 {
+          font-weight: 500;
+          font-size: 2.2125rem;
+          color: #fff;
+        }
+      }
+    }
+    
+    
+  }

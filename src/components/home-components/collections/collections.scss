@@ -1,0 +1,67 @@
+.collections {
+  padding-top: 120px;
+  background-color: #0b0c12;
+}
+
+.collections > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.1875rem;
+}
+
+.collections-top {
+  text-align: start;
+  h5 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
+.collections-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .collection-card {
+    width: 23%;
+    height: 10.1875rem;
+    background: url(./imges//photo-card.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1.5625rem;
+    display: flex;
+    align-items: end;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+    h6 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 250%;
+      color: #fff;
+    }
+  }
+}
+@media(max-width:735px){
+    .collections {
+        padding-top: 60px;
+        background-color: #0b0c12;
+      }
+      
+    .collections-bottom {
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        .collection-card {
+            width: 100%;
+            
+        }
+    
+    }
+
+}
+

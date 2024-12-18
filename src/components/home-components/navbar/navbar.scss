@@ -1,0 +1,126 @@
+html {
+  font-size: 16px;
+}
+
+.navbar {
+  background: url(./imges//showcase-bg1.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navbar > div {
+    backdrop-filter: blur(4px);
+
+    display: flex;
+  align-items: center;
+  padding: 1.875rem 0;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  width: 20%;
+}
+.navbar-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    border-bottom: 0.0625rem solid #ffff;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: #fff;
+    transition: 0.2s;
+    &:hover {
+      border-bottom: hidden;
+      color: #ec8f32;
+    }
+  }
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  .search-button {
+    background-color: transparent;
+    font-size: 1.5625rem;
+  }
+  .registratsiya-button {
+    border: 2px solid #fff !important;
+    border-radius: 3.125rem;
+    width: 10.375rem;
+    height: 2.625rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.3s;
+    &:hover {
+      background-color: #fff;
+      border: none;
+      color: #ec8f32;
+    }
+  }
+  .login-btn {
+    border-radius: 3.125rem;
+    width: 6.625rem;
+    height: 2.625rem;
+    background: #ec8f32;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 0%;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s;
+    &:hover {
+      background-color: transparent;
+      border: 2px solid #ec8f32;
+      color: #ec8f32;
+    }
+  }
+ 
+}
+.open-bars{
+  display: none;
+}
+
+
+@media (max-width: 1032px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 807px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 775px) {
+  .navbar-center {
+    display: none;
+  }
+  .navbar-left {
+    width: 30%;
+  }
+}
+
+@media (max-width:477px){
+    .registratsiya-button {
+        display: none;
+    }
+    .login-btn{
+        display: none;
+    }
+    .navbar-left {
+        width: 50%;
+      }
+      .open-bars{
+        display: block;
+      }
+      
+    
+}

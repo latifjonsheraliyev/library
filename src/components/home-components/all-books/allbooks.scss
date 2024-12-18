@@ -1,0 +1,99 @@
+.new-books {
+  background-color: #0b0c12;
+}
+
+.new-books > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.375rem;
+  padding-top: 4.25rem;
+}
+
+.new-books-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
+.new-books-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 10px;
+  position: relative;
+  .like-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  .new-card-descrip {
+    display: flex;
+    flex-direction: column;
+    gap: 0.225rem;
+    width: 70%;
+    p {
+      font-weight: 300;
+      font-size: 1rem;
+      color: #adadad;
+    }
+    h6 {
+      font-weight: 500;
+      font-size: 1.3125rem;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 742px) {
+  .new-books-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 10px;
+    .new-card-descrip {
+      display: flex;
+      flex-direction: column;
+      gap: 0.225rem;
+      width: 70%;
+      p {
+        font-weight: 300;
+        font-size: 1.7rem;
+        color: #adadad;
+      }
+      h6 {
+        font-weight: 500;
+        font-size: 2.2125rem;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width:539px){
+    .all-books-top{
+        h3 {
+            font-weight: 500;
+            font-size: 1.4rem;
+            color: #fff;
+          }
+    }
+    
+}
+
+@media (max-width:393px){
+    .all-books-top{
+        gap: 1rem !important;
+        h3 {
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: #fff;
+          }
+    }
+    
+}

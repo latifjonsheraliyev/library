@@ -1,0 +1,201 @@
+.footer {
+  background-color: #0b0c15;
+  padding-top: 9.375rem;
+}
+.footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.875rem;
+  border-top: 0.0625rem solid #413c3c;
+  align-items: self-start;
+  padding-bottom: 1.875rem;
+  .footer-top-right {
+    display: flex;
+    gap: 4.625rem;
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      h5 {
+        font-weight: 700;
+        font-size: 1.3125rem;
+        line-height: 286%;
+        color: #d9d9d9;
+      }
+      a {
+        font-weight: 300;
+        font-size: 0.75rem;
+        line-height: 208%;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #adadad;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  padding-top: 0.625rem;
+  border-top: 0.0625rem solid #413c3c;
+  padding-bottom: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+  .footer-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 4.375rem;
+    p {
+      font-weight: 300;
+      font-size: 0.75rem;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: #adadad;
+    }
+  }
+  .footer-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+}
+
+@media (max-width: 688px) {
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.875rem;
+    border-top: 0.0625rem solid #413c3c;
+    align-items: self-start;
+    padding-bottom: 1.875rem;
+    .footer-top-right {
+      display: flex;
+      gap: 2.625rem;
+      justify-content: space-between;
+      width: 100%;
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        h5 {
+          font-weight: 700;
+          font-size: 1.3125rem;
+          line-height: 286%;
+          color: #d9d9d9;
+        }
+        a {
+          font-weight: 300;
+          font-size: 0.75rem;
+          line-height: 208%;
+          text-decoration: underline;
+          text-decoration-skip-ink: none;
+          color: #adadad;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    padding-top: 0.625rem;
+    border-top: 0.0625rem solid #413c3c;
+    padding-bottom: 1.25rem;
+    align-items: center;
+    justify-content: space-between;
+    .footer-bottom-left {
+      display: flex;
+      align-items: center;
+      gap: 4.375rem;
+      p {
+        font-weight: 300;
+        font-size: 0.75rem;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #adadad;
+      }
+    }
+    .footer-bottom-right {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 563px) {
+  .footer-bottom {
+    display: flex;
+    padding-top: 0.625rem;
+    border-top: 0.0625rem solid #413c3c;
+    padding-bottom: 1.25rem;
+    align-items: center;
+    justify-content: space-between;
+    .footer-bottom-left {
+      display: flex;
+      flex-direction: column;
+      gap: 1.375rem;
+      align-items: start;
+      p {
+        font-weight: 300;
+        font-size: 0.75rem;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #adadad;
+      }
+    }
+    .footer-bottom-right {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      display: none;
+    }
+  }
+}
+
+@media (max-width:344px){
+  
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.875rem;
+    border-top: 0.0625rem solid #413c3c;
+    align-items: self-start;
+    padding-bottom: 1.875rem;
+    .footer-top-right {
+      display: flex;
+      gap: 2.625rem;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        h5 {
+          font-weight: 700;
+          font-size: 1.3125rem;
+          line-height: 286%;
+          color: #d9d9d9;
+        }
+        a {
+          font-weight: 300;
+          font-size: 0.75rem;
+          line-height: 208%;
+          text-decoration: underline;
+          text-decoration-skip-ink: none;
+          color: #adadad;
+        }
+      }
+    }
+  }
+
+
+}
